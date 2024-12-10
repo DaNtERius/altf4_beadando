@@ -4,18 +4,18 @@ br {
     margin: 10px 0;
 }
 .content-container {
-    overflow: hidden; /* Ensures content does not break layout */
+    overflow: hidden; /* Biztosítja, hogy a tartalom ne törje meg az elrendezést */
 }
 
 .content-container img {
     float: right;
-    margin-left: 20px; /* Adds space between the image and text */
-    max-width: 40%; /* Adjust image size if needed */
-    height: auto; /* Maintain aspect ratio */
+    margin-left: 20px; /* Szóközt ad a kép és a szöveg közé */
+    max-width: 40%; /* Szükség esetén állítsa be a képméretet */
+    height: auto; /* Képarány megtartása */
 }
 
 .content-container p {
-    text-align: justify; /* Optional: Makes the text look neat */
+    text-align: justify;
 }
 .logo
 {
@@ -63,8 +63,8 @@ br {
 }
 /* fooldal.php gombok */
 .info-card {
-    background-color: #a0a0a0; /* Light gray background */
-    color: white; /* Text color */
+    background-color: #a0a0a0; /* Világosszürke háttér */
+    color: white; /* Szöveg színe */
     text-align: center;
     padding: 20px;
     border-radius: 8px;
@@ -86,10 +86,10 @@ br {
     border: 2px solid white;
     font-weight: bold;
 }
-/* General carousel styles */
+/* Általános carousel stílusok */
 .carousel {
-    width: 100%; /* Maintain a max width for larger screens */
-    height: auto; /* Allow height to adjust dynamically */
+    width: 100%; /* Tartsa be a maximális szélességet nagyobb képernyők esetén */
+    height: auto; /* A magasság dinamikus beállításának engedélyezése */
     margin: 0 auto;
 }
 
@@ -99,58 +99,58 @@ br {
 }
 
 .carousel-item img {
-    width: 100%; /* Image stretches across the width */
-    height: auto; /* Let height adjust naturally */
-    object-fit: cover; /* Maintain aspect ratio and cover the area */
+    width: 100%; /* A kép átnyúlik a szélességben */
+    height: auto; /* Hagyja a magasságot természetesen beállítani */
+    object-fit: cover; /* A képarány megtartása és a terület lefedése */
 }
 
-/* Adjust image for landscape orientation */
+/* A kép beállítása a fekvő tájoláshoz */
 @media screen and (orientation: landscape) {
     .carousel img {
         height: 100vh;
     }
 }
 
-/* Responsive adjustments for smaller screens */
+/* Reszponzív beállítások kisebb képernyőkhöz */
 @media screen and (max-width: 768px) {
     .carousel-caption {
-        padding: 5px; /* Reduce padding for smaller screens */
-        background: rgba(0, 0, 0, 0.4); /* Slightly lighter background for better readability */
+        padding: 5px; /* Csökkentse a párnázást a kisebb képernyőknél */
+        background: rgba(0, 0, 0, 0.4); /* Kissé világosabb háttér a jobb olvashatóság érdekében */
     }
 
     .carousel-caption h2,
     .carousel-caption h6,
     .carousel-caption p {
-        font-size: 1rem; /* Adjust text size */
-        padding: 5px; /* Smaller padding */
-        margin: 3px 0; /* Reduce spacing between elements */
+        font-size: 1rem; /* Szövegméret módosítása */
+        padding: 5px;/* Kisebb párnázás */
+        margin: 3px 0;/* Az elemek közötti távolság csökkentése */
     }
 }
 
-/* Further adjustments for very small phones (e.g., 320px wide) */
+/* További beállítások nagyon kicsi telefonokhoz (pl. 320 képpont széles) */
 @media screen and (max-width: 480px) {
     .carousel-caption {
-        padding: 3px; /* Minimal padding */
-        background: rgba(0, 0, 0, 0.3); /* Even lighter background for compact view */
+        padding: 3px; /* Minimális párnázás */
+        background: rgba(0, 0, 0, 0.3); /* Még világosabb háttér a kompakt nézetért */
     }
 
     .carousel-caption h2 {
-        font-size: 1.25rem; /* Smaller title size */
+        font-size: 1.25rem; /* Kisebb címméret */
     }
 
     .carousel-caption p {
-        font-size: 0.9rem; /* Smaller paragraph size */
+        font-size: 0.9rem; /* Kisebb bekezdésméret */
     }
 
     .carousel-item img {
-        object-fit: contain; /* Avoid cropping too much on very small screens */
+        object-fit: contain; /* Kerülje a túlzott körbevágást nagyon kis képernyőkön */
     }
 }
 
-/* Handle carousel sizing for very narrow screens */
+/* Kezelje a karusszel méretezést nagyon keskeny képernyők esetén */
 @media screen and (max-width: 320px) {
     #carouselExampleCaptions {
-        max-width: 100%; /* Remove max width constraint */
+        max-width: 100%; /* Eltávolitani a maximális szélesség korlátozását */
     }
 
     .carousel-caption {
@@ -160,13 +160,13 @@ br {
     .carousel-caption h2,
     .carousel-caption h6,
     .carousel-caption p {
-        font-size: 0.8rem; /* Even smaller text */
+        font-size: 0.8rem; /* Még kisebb szöveg */
     }
 }
 .col-md-4 img {
-    width: 100%; /* Full width of the column */
-    height: 300px; /* Desired height */
-    object-fit: cover; /* Scale and crop the image */
+    width: 100%; /* Az oszlop teljes szélessége */
+    height: 300px; /* Kívánt magasság */
+    object-fit: cover; /* A kép méretezése és körbevágása */
 }
 .info-card-facebook
 {
