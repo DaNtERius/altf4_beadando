@@ -1,0 +1,183 @@
+/* sites/fooldal.php */
+br {
+    display: block;
+    margin: 10px 0;
+}
+.content-container {
+    overflow: hidden; /* Ensures content does not break layout */
+}
+
+.content-container img {
+    float: right;
+    margin-left: 20px; /* Adds space between the image and text */
+    max-width: 40%; /* Adjust image size if needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.content-container p {
+    text-align: justify; /* Optional: Makes the text look neat */
+}
+.logo
+{
+    display: block;
+    max-width: 25%;
+    height: auto;
+}
+
+.logo
+{
+    max-height: 25%;
+}
+/* fooldal.php kesek */
+.brand-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.brand-section {
+    background-color: white;
+}
+.brand-info {
+    max-width: 70%;
+}
+.brand-logo {
+    max-width: 20%;
+    display: flex;
+    justify-content: center;
+}
+.brand-logo img {
+    height:auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+.brand-header
+{
+    font-weight: bold;
+    font-style: normal;
+    text-transform: none;
+    text-decoration: none;
+}
+/* fooldal.php gombok */
+.info-card {
+    background-color: #a0a0a0; /* Light gray background */
+    color: white; /* Text color */
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.info-card h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.btn-outline-light {
+    border: 2px solid white;
+    font-weight: bold;
+}
+/* General carousel styles */
+.carousel {
+    width: 100%; /* Maintain a max width for larger screens */
+    height: auto; /* Allow height to adjust dynamically */
+    margin: 0 auto;
+}
+
+.carousel-inner {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carousel-item img {
+    width: 100%; /* Image stretches across the width */
+    height: auto; /* Let height adjust naturally */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+}
+
+/* Adjust image for landscape orientation */
+@media screen and (orientation: landscape) {
+    .carousel img {
+        height: 100vh;
+    }
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .carousel-caption {
+        padding: 5px; /* Reduce padding for smaller screens */
+        background: rgba(0, 0, 0, 0.4); /* Slightly lighter background for better readability */
+    }
+
+    .carousel-caption h2,
+    .carousel-caption h6,
+    .carousel-caption p {
+        font-size: 1rem; /* Adjust text size */
+        padding: 5px; /* Smaller padding */
+        margin: 3px 0; /* Reduce spacing between elements */
+    }
+}
+
+/* Further adjustments for very small phones (e.g., 320px wide) */
+@media screen and (max-width: 480px) {
+    .carousel-caption {
+        padding: 3px; /* Minimal padding */
+        background: rgba(0, 0, 0, 0.3); /* Even lighter background for compact view */
+    }
+
+    .carousel-caption h2 {
+        font-size: 1.25rem; /* Smaller title size */
+    }
+
+    .carousel-caption p {
+        font-size: 0.9rem; /* Smaller paragraph size */
+    }
+
+    .carousel-item img {
+        object-fit: contain; /* Avoid cropping too much on very small screens */
+    }
+}
+
+/* Handle carousel sizing for very narrow screens */
+@media screen and (max-width: 320px) {
+    #carouselExampleCaptions {
+        max-width: 100%; /* Remove max width constraint */
+    }
+
+    .carousel-caption {
+        padding: 2px;
+    }
+
+    .carousel-caption h2,
+    .carousel-caption h6,
+    .carousel-caption p {
+        font-size: 0.8rem; /* Even smaller text */
+    }
+}
+.col-md-4 img {
+    width: 100%; /* Full width of the column */
+    height: 300px; /* Desired height */
+    object-fit: cover; /* Scale and crop the image */
+}
+.info-card-facebook
+{
+    background-color: #1877F2;
+}
+.info-card-community
+{
+    background-color: #3c5a9a;
+}
+#kesportal-forum
+{
+    color:#ea8235;
+    text-decoration: none;
+}
