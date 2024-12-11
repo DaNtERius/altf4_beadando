@@ -6,7 +6,27 @@ br {
 .content-container {
     overflow: hidden; /* Biztosítja, hogy a tartalom ne törje meg az elrendezést */
 }
+/* Body teljes magasságába rakása */
+html, body {
+    height: 100%;
+    margin: 0;
+}
 
+/* Flexbox elrendezés a testhez */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tartalom növekedéshez szükséges */
+.main-content {
+    flex-grow: 1;
+}
+
+/* Biztosítja, hogy a lábléc alul legyen */
+footer {
+    margin-top: auto;
+}
 .content-container img {
     float: right;
     margin-left: 20px; /* Szóközt ad a kép és a szöveg közé */
