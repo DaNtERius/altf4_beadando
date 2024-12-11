@@ -43,4 +43,3 @@ $conn->close();
 <div class="mt-3 text-center">
     <a href="?oldal=contact_form" class="btn btn-primary">Vissza az űrlaphoz</a>
 </div>
-</div>
