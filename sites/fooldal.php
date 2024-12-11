@@ -73,7 +73,7 @@
 <!-- Footer-->
 <footer class="py-5 bg-dark">
     <div class="container px-4">
-        <ul class="list-unstyled d-flex justify-content-center mb-0 ">
+        <ul class="list-unstyled d-flex justify-content-center mb-0">
             <li class="mx-3 nav-item"><a href="#" class="text-white nav-link">Impresszum</a></li>
             <li class="mx-3 nav-item"><a href="#" class="text-white nav-link">Jogi nyilatkozat</a></li>
             <li class="mx-3"><p class="m-0 text-center text-white">
@@ -84,13 +84,7 @@
             <li class="mx-3 nav-item"><a href="#" class="text-white nav-link">Cookie-Kezelés</a></li>
             <li class="mx-3"><a href="#" class="text-white nav-link">Adatkezelés</a></li>
         </ul>
-
     </div>
-
 </footer>
-<!-- Bootstrap core JS-->
-
-<!-- Core theme JS-->
-<script src="js/scripts.js"></script>
 </body>
 </html>
