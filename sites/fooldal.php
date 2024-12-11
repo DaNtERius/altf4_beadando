@@ -74,15 +74,11 @@
 <footer class="py-5 bg-dark">
     <div class="container px-4">
         <ul class="list-unstyled d-flex justify-content-center mb-0">
-            <li class="mx-3 nav-item"><a href="#" class="text-white nav-link">Impresszum</a></li>
-            <li class="mx-3 nav-item"><a href="#" class="text-white nav-link">Jogi nyilatkozat</a></li>
             <li class="mx-3"><p class="m-0 text-center text-white">
                     <?php if(isset($lablec['copyright'])) { ?>&copy;&nbsp;<?= $lablec['copyright'] ?> <?php } ?>
                     &nbsp;
                     <?php if(isset($lablec['ceg'])) { ?><?= $lablec['ceg']; ?><?php } ?>
                 </p></li>
-            <li class="mx-3 nav-item"><a href="#" class="text-white nav-link">Cookie-Kezelés</a></li>
-            <li class="mx-3"><a href="#" class="text-white nav-link">Adatkezelés</a></li>
         </ul>
     </div>
 </footer>
