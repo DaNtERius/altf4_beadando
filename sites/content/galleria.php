@@ -1,23 +1,24 @@
 <?php
 include('includes/config.gal.php');
-
 ?>
 <section>
 <div class="container px-1">
     <div class="row gx-4 justify-content-center">
         <div class="my-4 text-center">
-    <a href="https://www.youtube.com/watch?v=kfchvCyHmsc" title="YouTube videó">
-        <video class="img-fluid rounded shadow" autoplay loop muted>
-            <source src="media/videos/5_Second_Video__Watch_the_Milky_Way_Rise.webm" type="video/webm">
-            Your browser does not support the video tag.
-        </video>
-    </a>
+            <a href="#" class="video-container" title="YouTube Video" id="video-link" data-video-id="kfchvCyHmsc">
+                <video autoplay loop muted>
+                    <source src="media/videos/5_Second_Video__Watch_the_Milky_Way_Rise.webm" type="video/webm">
+                </video>
+            </a>
+
+            <!-- Link to custom.js at the bottom of the HTML -->
+            <script src="media/videos/vid.js"></script>
         </div>
 </div>
 </section>
 <!-- Gallery -->
 <section>
-    <div class="container my-5">
+    <div class="container my-1">
         <h1 class="text-center mb-4">Galléria</h1>
         <div class="row g-4">
             <?php

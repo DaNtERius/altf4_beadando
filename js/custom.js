@@ -22,10 +22,11 @@ document.addEventListener("DOMContentLoaded", function () {
 //Login, regisztráció, elfelejtett jelszó validáció
 window.onload = function () {
     var kuld = document.getElementById("kuld");
-    if(kuld){
+    if (kuld) {
         kuld.disabled = true;
     }
 };
+
 function ellenoriz() {
 
     var rendben = true;
@@ -33,10 +34,30 @@ function ellenoriz() {
 
     // Mezők és minták egy tömbben a dinamikus kezeléshez
     const fields = [
-        { id: "name", pattern: /^[A-ZÁÉÍÓÖŐÚÜŰ][a-záéíóöőúüűàâäãåçèéêëìíîïðòóôõöøùúûüÿñšž]+(?: [A-ZÁÉÍÓÖŐÚÜŰ][a-záéíóöőúüűàâäãåçèéêëìíîïðòóôõöøùúûüÿñšž]+)+$/, minLength: 1, errorMsg: "Érvényes nevet kell beírni." },
-        { id: "email", pattern: /^[a-z0-9]+@[a-z0-9]+\.[a-z]{2,4}$/, minLength: 1, errorMsg: "Írj be egy helyes e-mail címet." },
-        { id: "subject", pattern: /^.{3,100}$/, minLength: 3, errorMsg: "A tárgynak 3 és 100 karakter között kell lennie." },
-        { id: "message", pattern: /^.{10,1000}$/, minLength: 10, errorMsg: "Az üzenetnek 3 és 100 karakter között kell lennie." }
+        {
+            id: "name",
+            pattern: /^[A-ZÁÉÍÓÖŐÚÜŰ][a-záéíóöőúüűàâäãåçèéêëìíîïðòóôõöøùúûüÿñšž]+(?: [A-ZÁÉÍÓÖŐÚÜŰ][a-záéíóöőúüűàâäãåçèéêëìíîïðòóôõöøùúûüÿñšž]+)+$/,
+            minLength: 1,
+            errorMsg: "Érvényes nevet kell beírni."
+        },
+        {
+            id: "email",
+            pattern: /^[a-z0-9]+@[a-z0-9]+\.[a-z]{2,4}$/,
+            minLength: 1,
+            errorMsg: "Írj be egy helyes e-mail címet."
+        },
+        {
+            id: "subject",
+            pattern: /^.{3,100}$/,
+            minLength: 3,
+            errorMsg: "A tárgynak 3 és 100 karakter között kell lennie."
+        },
+        {
+            id: "message",
+            pattern: /^.{10,1000}$/,
+            minLength: 10,
+            errorMsg: "Az üzenetnek 3 és 100 karakter között kell lennie."
+        }
     ];
 
     // Mezők dinamikus ellenőrzése

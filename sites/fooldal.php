@@ -15,12 +15,13 @@
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/custom.js"></script>
     <script src="./js/bootstrap.bundle.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body id="page-top">
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <div class="container px-0">
-        <div class="container d-flex align-items-center flex-wrap" >
+        <div class="container d-flex align-items-center flex-wrap">
             <!-- Logo and Brand Name -->
             <div class="d-flex align-items-center">
                 <a href="index.php">
@@ -36,37 +37,51 @@
                 </a>
                 <?php if (isset($_SESSION['login'])) { ?>
                     <span class="nav-link">
-            <div class="d-flex align-items-center justify-content-end">
-                <a href="?oldal=logout" class="btn btn-secondary me-3">Kilépés</a>
-    <p class="mb-0 text-white me-3">Bejelentkezve: <strong><?= htmlspecialchars($_SESSION['csn'] . " " . $_SESSION['un'] . " (" . $_SESSION['login'] . ")") ?></strong></p>
-
-</div>
+                        <div class="d-flex align-items-center justify-content-end">
+                            <a href="?oldal=logout" class="btn btn-secondary me-3">Kilépés</a>
+                            <p class="mb-0 text-white me-3">Bejelentkezve: <strong><?= htmlspecialchars($_SESSION['csn'] . " " . $_SESSION['un'] . " (" . $_SESSION['login'] . ")") ?></strong></p>
+                        </div>
+                    </span>
                 <?php } else { ?>
                     <a href="?oldal=login" class="btn btn-secondary ms-4">Belépés</a>
                 <?php } ?>
             </div>
-        <ul class="navbar-nav ms-auto">
 
-        </ul>
+            <ul class="navbar-nav ms-auto"></ul>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
                     <?php foreach ($oldalak as $url => $oldal) { ?>
                         <?php if ((!isset($_SESSION['login']) && $oldal['menun'][0]) || (isset($_SESSION['login']) && $oldal['menun'][1])) { ?>
                             <li class="nav-item<?= ($oldal === $keres) ? ' active' : '' ?>">
-                                <a class="nav-link" href="<?= ($url === '/') ? "." : ('?oldal=' . htmlspecialchars($url)) ?>">
+                                <a class="nav-link" href="<?= ($url === '/') ? '.' : ('?oldal=' . htmlspecialchars($url)) ?>">
                                     <?= htmlspecialchars($oldal['szoveg']) ?>
                                 </a>
                             </li>
                         <?php } ?>
                     <?php } ?>
-
-
                 </ul>
+
+                <!-- Search Bar -->
+                <div class="nav-item dropdown ms-3">
+                    <a class="nav-link" href="#" role="button" id="searchDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-search" style="filter: invert(100%);"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end p-3" style="min-width: 300px;" aria-labelledby="searchDropdown">
+                        <form action="https://cse.google.com/cse" method="get" class="d-flex">
+                            <input type="text" name="q" class="form-control me-2" placeholder="Keresés..." aria-label="Keresés">
+                            <input type="hidden" name="cx" value="600c9212070a34cb9">
+                            <button class="btn btn-primary" type="submit">Keresés</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
 </nav>
 <!-- About section-->
 <?php include("./sites/content/{$keres['fajl']}.php")?>

@@ -17,7 +17,6 @@ $lablec = array(
     'copyright' => 'Copyright ' . date("Y") . '.',
     'ceg' => 'NetMasters Europe Kft.'
 );
-
 // Page definitions
 $oldalak = array(
     '/' => array(
@@ -73,6 +72,11 @@ $oldalak = array(
     'regisztral' => array(
         'fajl' => 'regisztral',
         'szoveg' => '',
+        'menun' => array(0, 0),
+    ),
+    'google' => array(
+        'fajl' => 'google',
+        'szoveg' => 'Keresési eredmények',
         'menun' => array(0, 0),
     )
 );
