@@ -13,7 +13,7 @@ if (session_status() === PHP_SESSION_NONE) {
                 <div class="col-12 col-md-6">
                     <div class="card shadow-lg">
                         <div class="card-body">
-                            <h3 class="card-title text-center mb-4">Üdvözöljük, <?php echo htmlspecialchars($_SESSION['username']); ?>!</h3>
+                            <h3 class="card-title text-center mb-4">Üdvözöljük, <?php echo htmlspecialchars($_SESSION['csn'] . " " . $_SESSION['un'] . " (" . $_SESSION['login'] . ")"); ?>!</h3>
                             <p class="text-center">Ön már be van jelentkezve.</p>
                             <div class="d-grid">
                                 <a href="?oldal=logout" class="btn btn-danger">Kijelentkezés</a>
