@@ -11,7 +11,7 @@
         <div class="container mt-5">
             <div class="alert alert-danger" role="alert">
                 <h1 class="display-4">A bejelentkezés nem sikerült!</h1>
-                <p><a href="?oldal=belepes" class="btn btn-primary">Próbálja újra!</a></p>
+                <p><a href="?oldal=login" class="btn btn-primary">Próbálja újra!</a></p>
             </div>
         </div>
     <?php endif; ?>
