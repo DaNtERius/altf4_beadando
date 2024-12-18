@@ -52,7 +52,7 @@ if (session_status() === PHP_SESSION_NONE) {
         <?php } ?>
     </div>
 
-    <!-- Registration Modal -->
+
     <!-- Registration Modal -->
     <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
         <div class="modal-dialog">
