@@ -72,7 +72,7 @@ if (session_status() === PHP_SESSION_NONE) {
                         </div>
                         <div class="mb-3">
                             <label for="felhasznalo_reg" class="form-label">Felhasználónév:</label>
-                            <input placeholder="Felhasználói név" type="text" class="form-control" id="felhasznalo_reg" name="felhasznalo" required>
+                            <input placeholder="Felhasználói név" type="text" class="form-control" id="felhasznalo" name="felhasznalo" required>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">E-mail cím:</label>
@@ -80,7 +80,7 @@ if (session_status() === PHP_SESSION_NONE) {
                         </div>
                         <div class="mb-3">
                             <label for="jelszo_reg" class="form-label">Jelszó:</label>
-                            <input placeholder="Jelszó" type="password" class="form-control" id="jelszo_reg" name="jelszo" required>
+                            <input placeholder="Jelszó" type="password" class="form-control" id="jelszo" name="jelszo" required>
                         </div>
                         <div class="d-grid">
                             <button type="submit" class="btn btn-primary">Regisztráció</button>
