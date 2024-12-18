@@ -79,6 +79,11 @@
                         </form>
                     </div>
                 </div>
+                <!-- GitHub -->
+                <div class="nav-item dropdown ms-3">
+                    <a class="nav-link" href="https://github.com/DaNtERius/altf4_beadando">
+                        <i class="bi bi-github" style="filter: invert(100%);"></i>
+                    </a>
             </div>
         </div>
     </div>
