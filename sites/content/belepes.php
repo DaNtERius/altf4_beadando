@@ -52,7 +52,6 @@ if (session_status() === PHP_SESSION_NONE) {
         <?php } ?>
     </div>
 
-
     <!-- Registration Modal -->
     <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -65,23 +64,23 @@ if (session_status() === PHP_SESSION_NONE) {
                     <form method="post" action="?oldal=regisztral">
                         <div class="mb-3">
                             <label for="csaladi_nev" class="form-label">Vezetéknév:</label>
-                            <input placeholder="vezetéknév" class="form-control" id="csaladi_nev" name="csaladi_nev" required>
+                            <input placeholder="Vezetéknév" class="form-control" id="csaladi_nev" name="csaladi_nev" required>
                         </div>
                         <div class="mb-3">
                             <label for="uto_nev" class="form-label">Keresztnév:</label>
-                            <input placeholder="keresztnév" class="form-control" id="uto_nev" name="uto_nev" required>
+                            <input placeholder="Keresztnév" class="form-control" id="uto_nev" name="uto_nev" required>
                         </div>
                         <div class="mb-3">
-                            <label for="felhasznalo" class="form-label">Felhasználónév:</label>
-                            <input placeholder="felhasználói név" type="text" class="form-control" id="felhasznalo" name="felhasznalo" required>
+                            <label for="felhasznalo_reg" class="form-label">Felhasználónév:</label>
+                            <input placeholder="Felhasználói név" type="text" class="form-control" id="felhasznalo_reg" name="felhasznalo" required>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">E-mail cím:</label>
-                            <input placeholder="e-mail cím" type="email" class="form-control" id="email" name="email" required>
+                            <input placeholder="E-mail cím" type="email" class="form-control" id="email" name="email" required>
                         </div>
                         <div class="mb-3">
-                            <label for="jelszo" class="form-label">Jelszó:</label>
-                            <input placeholder="jelszó" type="password" class="form-control" id="jelszo" name="jelszo" required>
+                            <label for="jelszo_reg" class="form-label">Jelszó:</label>
+                            <input placeholder="Jelszó" type="password" class="form-control" id="jelszo_reg" name="jelszo" required>
                         </div>
                         <div class="d-grid">
                             <button type="submit" class="btn btn-primary">Regisztráció</button>
